@@ -43,7 +43,7 @@ header.nav{position:sticky;top:0;z-index:50;background:var(--paper);border-botto
 .hero-r{padding:54px 0 46px;padding-left:46px;display:flex;flex-direction:column;justify-content:space-between}
 @media(max-width:900px){.hero-l{border-right:none;border-bottom:1.5px solid var(--line);padding-right:0}.hero-r{padding-left:0}}
 .kicker{font-family:'IBM Plex Mono';font-size:12.5px;letter-spacing:.04em;color:var(--blue);display:flex;justify-content:space-between;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:30px;flex-wrap:wrap;gap:8px}
-.hero h1{font-size:clamp(2.4rem,5.6vw,4.4rem);font-weight:800;letter-spacing:-.035em}
+.hero h1{font-size:clamp(1.9rem,4.2vw,3.2rem);font-weight:800;letter-spacing:-.03em}
 .hero h1 .b{color:var(--blue)}
 .hero .sub{font-size:1.06rem;color:var(--ink2);max-width:430px;margin-top:26px;font-weight:400}
 .facts{display:grid;gap:0;border-top:1.5px solid var(--line)}
@@ -131,19 +131,6 @@ section.quiet .kwlist li{font-size:13px;font-weight:500;padding:9px 0;color:var(
 .org-row .omail{font-family:'IBM Plex Mono';font-size:11.5px;color:var(--blue);text-align:right;word-break:break-all}
 @media(max-width:760px){.org-row .omail{text-align:left}}
 
-/* dates */
-.dates{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--rule)}
-@media(max-width:760px){.dates{grid-template-columns:1fr}}
-.dcol{padding:30px 40px 30px 0}
-.dcol:first-child{border-right:1px solid var(--rule)}
-@media(max-width:760px){.dcol{padding:24px 0;border-right:none!important}}
-.ditem{display:flex;gap:18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule)}
-.ditem .dd{font-family:'IBM Plex Mono';font-weight:500;font-size:14px;color:var(--blue);min-width:120px}
-.ditem .dl{font-size:14px;color:var(--ink2)}
-.vbox{position:relative;aspect-ratio:16/10;background:#e8ecf4;overflow:hidden;border:1.5px solid var(--line)}
-.vbox svg{width:100%;height:100%;display:block}
-.vbox .cap{position:absolute;left:0;bottom:0;right:0;background:var(--ink);color:var(--paper);font-size:12px;font-family:'IBM Plex Mono';padding:9px 12px}
-
 /* footer */
 footer{padding:46px 0 38px}
 .flogos{display:flex;align-items:center;justify-content:center;gap:46px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);padding:22px 30px;margin-bottom:26px}
@@ -156,7 +143,7 @@ footer{padding:46px 0 38px}
 a:focus-visible,.nav-cta:focus-visible,summary:focus-visible,.hero-actions a:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .prog tr.ev{transition:background .15s,box-shadow .15s}
 .prog tr.ev:hover{box-shadow:inset 3px 0 0 var(--blue)}
-.fact,.ditem{transition:box-shadow .15s}
+.fact{transition:box-shadow .15s}
 .fact:hover{box-shadow:inset 3px 0 0 var(--blue)}
 </style>
 </head>
@@ -164,8 +151,8 @@ a:focus-visible,.nav-cta:focus-visible,summary:focus-visible,.hero-actions a:foc
 <header class="nav">
   <div class="wrap nav-in">
     <a href="#top" class="brand"><span class="sq"></span> Human–AV Interaction / ITSC 2026</a>
-    <nav class="nav-links"><a href="#speakers">Talks</a><a href="#about">About</a><a href="#program">Program</a><a href="#organizers">Organizers</a><a href="#dates">Dates</a></nav>
-    <a href="#dates" class="nav-cta">15.09.2026 · NAPLES</a>
+    <nav class="nav-links"><a href="#speakers">Talks</a><a href="#about">About</a><a href="#program">Program</a><a href="#organizers">Organizers</a></nav>
+    <a href="#program" class="nav-cta">15.09.2026 · NAPLES</a>
   </div>
 </header>
 
@@ -348,43 +335,6 @@ a:focus-visible,.nav-cta:focus-visible,summary:focus-visible,.hero-actions a:foc
   <div class="wrap">
     <div class="sec-top"><div class="sec-no">§04</div><h2>Organizing committee</h2></div>
     <div class="pad" style="padding-bottom:30px"><div class="orgs" id="orgs"></div></div>
-  </div>
-</section>
-
-<section id="dates">
-  <div class="wrap">
-    <div class="sec-top"><div class="sec-no">§05</div><h2>Dates &amp; venue</h2><div class="note">Naples, Italy</div></div>
-    <div class="pad">
-      <div class="dates">
-        <div class="dcol">
-          <div class="ditem"><div class="dd">15.09.2026</div><div class="dl">Workshop day — Workshop / Tutorial / Industry Panel Day.</div></div>
-          <div class="ditem"><div class="dd">16–18.09.2026</div><div class="dl">IEEE ITSC 2026 main conference, Naples.</div></div>
-          <div class="ditem"><div class="dd">Venue</div><div class="dl">Convention Bureau Stazione Marittima, Molo Angioino, Naples.</div></div>
-        </div>
-        <div class="dcol" style="border-right:none">
-          <div class="vbox">
-            <svg viewBox="0 0 900 560" role="img" aria-label="Line drawing of the Bay of Naples with Vesuvius" xmlns="http://www.w3.org/2000/svg">
-              <rect width="900" height="560" fill="#e8ecf4"/>
-              <circle cx="700" cy="120" r="46" fill="none" stroke="#c5281d" stroke-width="3"/>
-              <path d="M0 330 L250 330 L390 180 L430 205 L470 180 L620 330 L900 330" fill="none" stroke="#0b4fb0" stroke-width="4" stroke-linejoin="round"/>
-              <path d="M398 196 Q414 230 442 196" fill="none" stroke="#0b4fb0" stroke-width="3"/>
-              <g stroke="#0b4fb0" stroke-width="2.5" fill="none" opacity=".65">
-                <path d="M40 390 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
-                <path d="M0 440 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
-                <path d="M60 495 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
-              </g>
-              <g stroke="#16181d" stroke-width="3" fill="#f4f3ee">
-                <path d="M180 372 L300 372 L286 402 L194 402 Z"/>
-                <line x1="240" y1="372" x2="240" y2="330"/>
-                <path d="M240 334 L286 350 L240 366 Z" fill="#c5281d" stroke="none"/>
-              </g>
-              <text x="40" y="70" font-family="IBM Plex Mono, monospace" font-size="20" letter-spacing="4" fill="#16181d">40.8394° N · 14.2520° E</text>
-            </svg>
-            <div class="cap">Convention Bureau Stazione Marittima — Naples, Italy</div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
