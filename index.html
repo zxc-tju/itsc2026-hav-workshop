@@ -120,14 +120,14 @@ section.quiet .kwlist li{font-size:13px;font-weight:500;padding:9px 0;color:var(
 
 /* organizers */
 .orgs{border-top:1px solid var(--rule)}
-.org-row{display:grid;grid-template-columns:54px 1fr 1.4fr 150px;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule);align-items:baseline;transition:.15s}
+.org-row{display:grid;grid-template-columns:54px 1fr 1.4fr auto;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule);align-items:baseline;transition:.15s}
 .org-row:hover{background:var(--paper2)}
 @media(max-width:760px){.org-row{grid-template-columns:40px 1fr;gap:8px 14px}.org-row .obio,.org-row .omail{grid-column:2}}
 .org-row .oi{font-family:'IBM Plex Mono';font-size:13px;color:var(--blue);font-weight:500}
 .org-row .on{font-weight:700;font-size:16px}
 .org-row .on small{display:block;font-weight:400;color:var(--muted);font-size:12.5px;font-family:'Archivo Narrow';margin-top:2px}
 .org-row .obio{font-size:13px;color:var(--ink2);line-height:1.5}
-.org-row .omail{font-family:'IBM Plex Mono';font-size:11.5px;color:var(--blue);text-align:right;word-break:break-all}
+.org-row .omail{font-family:'IBM Plex Mono';font-size:11.5px;color:var(--blue);text-align:right;white-space:nowrap}
 @media(max-width:760px){.org-row .omail{text-align:left}}
 
 /* footer */
@@ -314,12 +314,12 @@ a:focus-visible,.nav-cta:focus-visible,summary:focus-visible,.hero-actions a:foc
       <table class="prog">
         <tr class="sess-row"><td colspan="2">Opening Session</td></tr>
         <tr class="ev"><td class="time">13:30–13:40</td><td class="ttl">Opening speech<div class="who">Dr. Xiaocong Zhao · Tongji University</div></td></tr>
-        <tr class="sess-row"><td colspan="2">Keynote Session <span class="chair">Chair — Dr. Xiaocong Zhao</span></td></tr>
+        <tr class="sess-row"><td colspan="2">Keynote Session</td></tr>
         <tr class="ev"><td class="time">13:40–14:00</td><td class="ttl">Physics-Enhanced Artificial Intelligence (AI) for Transportation Autonomy<div class="who">Prof. Xiaopeng Li · Univ. of Wisconsin–Madison</div></td></tr>
         <tr class="ev"><td class="time">14:00–14:20</td><td class="ttl">Reinforcement Learning in Transportation<div class="who">Prof. Ostap Okhrin · TU Dresden</div></td></tr>
         <tr class="ev"><td class="time">14:20–14:40</td><td class="ttl">How to Improve In-Vehicle Interfaces Through Computational Driver Models<div class="who">Asst. Prof. Patrick Ebel · University of Potsdam / HPI</div></td></tr>
         <tr class="brk"><td colspan="2">Coffee Break &amp; Speed Dating · 14:40–15:10</td></tr>
-        <tr class="sess-row"><td colspan="2">Invited Session <span class="chair">Chair — Dr. Haoyang Liang</span></td></tr>
+        <tr class="sess-row"><td colspan="2">Invited Session</td></tr>
         <tr class="ev"><td class="time">15:10–15:30</td><td class="ttl">Sky-Drive: A Distributed Multiagent Simulation Platform for Human-AI Collaborative and Socially Aware Future Transportation<div class="who">Dr. Zilin Huang · Univ. of Wisconsin–Madison</div></td></tr>
         <tr class="ev"><td class="time">15:30–15:50</td><td class="ttl">E3AD: An Emotion-Aware Vision-Language-Action Model for Human-Centric End-to-End Autonomous Driving<div class="who">Mr. Yihong Tang · McGill University &amp; Mila</div></td></tr>
         <tr class="ev"><td class="time">15:50–16:10</td><td class="ttl">End-to-End Reinforcement Learning for Radar-Based Car-Following<div class="who">Mr. Paul Auerbach · Barkhausen Institut / TU Dresden</div></td></tr>
